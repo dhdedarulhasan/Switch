@@ -1,0 +1,537 @@
+/* ======================================
+
+Template Name: Merkury_Landing Page
+Template URI: G:\New Tutorial\WD\UY Lab\Files\02-Standard PSD\05-Main.psd
+Author: Dedarul Hasan
+Author URI: https://www.facebook.com/WhiteDevil2k/
+Version: 1.0
+Description: An awesome personal blog template.
+Support: mddedarulhasan@gmail.com
+Color: #31d7ce
+
+========================================*/
+
+/* ======================================
+
+CSS INDEX
+---------
+1.  Google Fonts
+2.  Common Css
+3.  Reusable Css
+4.  Menubar Css
+5.  Banner Css
+6.  Services Css
+7.  Portfolio Css
+8.  Testimonial Css
+9.  Client List Css
+10. Team Members Css
+11. Work with us Css
+12. Footer Css
+
+========================================*/
+
+
+/*====================================
+            1. Google Font Css
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/*====================================
+            2. Common Css
+====================================*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    font-size: 62.5%;
+    font-family: 'proxima_nova_altlight';
+    font-family: 'proxima_novaregular';
+    font-family: 'proxima_novabold';
+    font-family: 'nautilus_pompiliusregular', cursive;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+ul,ol{
+    list-style-type: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/*====================================
+            3. Reusable Css Start
+====================================*/
+.reuseable_content{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    padding: 4.5rem 0;
+    position: relative;
+}
+.reuseable_content h2::after {
+    position: absolute;
+    top: 45%;
+    left: 48.7%;
+    content: '';
+    height: .2rem;
+    width: 3.6rem;
+    background-color: #828181;
+}
+.reuseable_content h2{
+    color: #828181;
+    font-size: 2.1rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+.reuseable_content p{
+    color: #b7b3b3;
+    font-size: 1.6rem;
+}
+.view_more{
+    margin: 5.5rem 0;
+}
+.view_more a i {
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.reuseable_footer_head{
+    text-align: center;
+    padding: 3rem 0;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #ddd;
+    position: relative;
+}
+.reuseable_footer_head::after {
+    position: absolute;
+    content: '';
+    bottom: 30px;
+    left: 19.4rem;
+    width: 3.7rem;
+    height: .2rem;
+    background-color: #ddd;
+}
+
+
+/*====================================
+            4. Menubar Css Start
+====================================*/
+.menubar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.menu_list ul{
+    display: flex;
+}
+.menu_list ul li{
+    padding: 1rem 2rem;
+}
+.menu_list ul li.active{
+    font-weight: 700;
+}
+.menu_list ul li a{
+    font-size: 1.4rem;
+    font-family: 'proxima_novaregular';
+    color: #fff;
+}
+.menu_list ul li a:hover{
+    border-top: .3rem solid #54d154;
+}
+
+.switch{
+    padding-top: 1rem;
+    font-family: 'nautilus_pompiliusregular';
+    font-size: 2.3rem;
+    color: #fff;
+}
+.search{
+    padding-top: 1rem;
+    padding-left: 20.4rem;
+    position: relative;
+}
+.search input{
+    height: 3rem;
+    border-radius: 3rem;
+    padding-top: .9rem;
+    padding-left: 2rem;
+}
+.search input::placeholder{
+    color: #111111;
+    font-family: 'proxima_nova_altlight';
+    font-size: 1.5rem;
+}
+.search_icon{
+    position: absolute;
+    top: 32.1%;
+    right: 10%;
+}
+.search_icon a{
+    color: #111;
+}
+
+/*====================================
+            5. banner Css Start
+====================================*/
+
+.banner{
+    background: url(img/banner.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner_content{
+    padding: 25rem 0;
+    text-align: center;
+    color: #fff;
+}
+.banner_header h1{
+    font-size: 5.5rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.banner_button .banner_btn{
+    background-color: #54d154;
+    width: 20.5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    border: .1rem solid #54d154;
+    font-family: 'proxima_novaregular';
+    font-size: 2.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 4rem;
+}
+.scroll_button a {
+    padding: .5rem 3rem;
+    color: #111;
+    font-family: 'proxima_nova_altlight';
+    font-size: 1.4rem;
+    background-color: #d6c8c1c0;
+    border-radius: 3rem;
+}
+.scroll_button {
+    color: #201f1f;
+    margin: 2rem 0;
+}
+
+
+/*====================================
+            6. Services Css Start
+====================================*/
+
+.icon_section {
+    text-align: center;
+    padding: 5rem 0;
+    margin-bottom: 10rem;
+    border-radius: 3rem;
+}
+.icon_section:hover{
+    background-color: #fff;
+    box-shadow: 0 0 2.5rem #111;
+    border-radius: 3rem;
+}
+.icon_bg i{
+    font-size: 6rem;
+    background-color: #e1f3e1;
+    height: 14.4rem;
+    width: 14.4rem;
+    line-height: 14.4rem;
+    border-radius: 3.4rem;
+}
+.icon_text h2{
+    font-size: 2.4rem;
+    font-family: 'proxima_novabold';
+    color: #828181;
+    padding-top: 3rem;
+}
+.icon_text p{
+    padding: 1.5rem 5rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat';
+}
+.services_btn{
+    border-radius: 3rem;
+    background-color: #54d154;
+    font-size: 1.6rem;
+    font-family: 'proxima_novabold';
+    padding: .5rem 2rem;
+    border: .1rem solid #54d154;
+    color: #fff;
+}
+
+/*====================================
+            7. Portfolio Css Start
+====================================*/
+
+#portfolio{
+    background-color: #54d154;
+    padding-bottom: 3rem;
+}
+#portfolio p{
+    color: #2b9b2b;
+}
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn.active, .btn-primary.dropdown-toggle.show, .btn-primary:active{
+    background-color: #2b9b2b;
+    text-transform: uppercase;
+    border-color: #2b9b2b;
+}
+.isotopebtn{
+    background-color: #fff;
+    color: #2b9b2b;
+    border-radius: 3rem;
+    font-family: 'proxima_novaregular';
+    font-size: 1.6rem;
+}
+.isotopebtn.active:hover {
+    background-color: #2b9b2b;
+    color: #fff;
+}
+.isotopebtn:hover{
+    background-color: #fff;
+    color: #2b9b2b;
+}
+.view_more a {
+    padding: 1rem 3rem;
+    background-color: #2b9b2b;
+    font-family: 'proxima_novabold';
+    font-size: 1.8rem;
+    color: #fff;
+    border-radius: 3rem;
+}
+
+/*====================================
+            8. Testimonial Css Start
+====================================*/
+
+.carousel_start{
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+}
+.ceo_message img{
+    padding-top: 2rem;
+}
+.ceo_message h4{
+    font-family: 'proxima_novaregular';
+    font-size: 1.5rem;
+}
+
+
+/*====================================
+            9. Client List Css Start
+====================================*/
+.client{
+    background-color: #f2f1f1;
+}
+.up_client_list{
+    padding: 3rem 0;
+    text-align: center;
+}
+.down_client_list{
+    padding: 3rem 0;
+    text-align: center;
+}
+.view_more .client{
+    padding: 1rem 3rem;
+    background-color: #dddcdc;
+    font-family: 'proxima_novabold';
+    font-size: 1.8rem;
+    color: #a59d9d;
+    border-radius: 3rem;
+}
+
+
+/*====================================
+            10. Team Members Css Start
+====================================*/
+.teams{
+    background: #54d154;
+}
+.teams .team_cl_h2{
+    color: #207b20;
+}
+.teams .team_cl_p{
+    color: #2b9b2b;
+}
+.team_member span{
+    position: relative;
+}
+.team_member span::after {
+    content: '';
+    position: absolute;
+    top: 7.7rem;
+    left: 5.9rem;
+    width: .2rem;
+    height: 7.5rem;
+    background-color: #207b20;
+}
+.team_member h4{
+    font-family: 'proxima_novaregular';
+    font-size: 1.6rem;
+    color: #fff;
+    padding-top: 10rem;
+    margin-bottom: 1rem;
+}
+.team_member ul{
+    display: flex;
+    margin-bottom: 5rem;
+    background-color: #e6e7e6;
+    border-radius: 3rem;
+    width: 13rem;
+    margin-left: 3.8rem;
+    padding: .5rem;
+}
+.team_member ul li{
+    padding: 0 .5rem;
+}
+.team_member ul li a{
+    background-color: #ffc107;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/*====================================
+            11. Work with us Css Start
+====================================*/
+.work_with{
+    background-color: #3eba3e;
+}
+.work_with_us{
+    padding: 4rem 0;
+}
+.work_with_us button{
+    font-family: 'proxima_nova_altlight';
+    font-size: 1.9rem;
+    padding: 1rem 3rem;
+    background-color: #54d154;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3rem;
+    border: .1rem solid #54d154;
+}
+.work_with_us button:hover{
+    background-color: #828181;
+    color: #fff;
+    border: .1rem solid #828181;
+}
+/*====================================
+            12. Footer Css Start
+====================================*/
+footer{
+    background-color: #333;
+    padding: 3rem 0;
+}
+.footer_p{
+    padding: 0 7rem;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'proxima_novaregular';
+    padding-bottom: 2rem;
+}
+.footer_icon {
+    padding-left: 10rem;
+}
+
+.footer_img{
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+.footer_img_title h4{
+    color: #ccc;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+}
+.footer_img_title .sub_title1{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #54d154;
+    display: inline;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+.footer_img_title .sub_title2{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffba00;
+    display: inline;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+.footer_img_title .sub_title3{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #089dea;
+    display: inline;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+.footer_img_title .sub_title4{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f34d04;
+    display: inline;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+.footer_img_title .sub_title5{
+    font-size: 1.3rem;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ffba00;
+    display: inline;
+    padding: .2rem 1rem;
+    border-radius: .3rem;
+}
+
+.contect_text{
+    font-family: 'proxima_novaregular';
+    font-size: 1.4rem;
+    color: #ccc;
+    padding-bottom: 1rem;
+}
+.contect_info input, .contect_info textarea {
+    background-color: #444;
+    padding: 1rem 0;
+    border: .1rem solid #444;
+    margin-top: .3rem;
+    padding-left: 1.4rem;
+}
+.contect_info input::placeholder, .contect_info textarea::placeholder {
+    font-size: 1.4rem;
+    color: #777;
+}
+.contect_info input:focus, .contect_info textarea:focus {
+    background-color: #444;
+    border-color: #444;
+    box-shadow: 0 0 0;
+}
+.contect_info form button {
+    margin-top: .3rem;
+    width: 100%;
+    background-color: #2b9b2b;
+    border: .1rem solid #2b9b2b;
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'proxima_novaregular';
+    text-transform: uppercase;
+}
